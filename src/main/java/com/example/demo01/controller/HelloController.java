@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/test")
 public class HelloController {
-
+    //省略参数名value 相当于@RequestMapping(value = "/hello")
     @RequestMapping("/hello")
     public String hello(){
-        return "这是我的第一个SpringBoot项目！";
+        return "这是我的第一个SpringBoot项目^_^";
     }
 
 }
